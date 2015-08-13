@@ -20,4 +20,13 @@ var cereal = 5;
 //two loafs of bread
 var bread = 1;
 
+//top ramon noodles come in a 12 pack or .17 cent each
+var topramonnoodles = [.17, .17 * 12];  
+
+//lemonade is 2 for $5.00
+var juice = [2.50, 2.50 * 2]; 
+
+
+var sum = vitamindmilk + cereal * 2 + eggs + bread * 2 + bestfoodsmayonnaise + kraftsinglescheese + sandwhichmeat + topramonnoodles [1] + aquafinabottlewater + juice [1];
+
 
