@@ -13,7 +13,6 @@ var kraftsinglescheese = 3;
 var sandwhichmeat = 6;
 var aquafinabottlewater = 6;
 
-
 //two boxes of cereal
 var cereal = 5;
 
@@ -30,3 +29,7 @@ var juice = [2.50, 2.50 * 2];
 var sum = vitamindmilk + cereal * 2 + eggs + bread * 2 + bestfoodsmayonnaise + kraftsinglescheese + sandwhichmeat + topramonnoodles [1] + aquafinabottlewater + juice [1];
 
 
+//california sales tax is 7.5% 
+var salestax = 0.075
+var total = sum * salestax + sum;
+console.log(total);
