@@ -12,3 +12,12 @@ var bestfoodsmayonnaise = 4;
 var kraftsinglescheese = 3;
 var sandwhichmeat = 6;
 var aquafinabottlewater = 6;
+
+
+//two boxes of cereal
+var cereal = 5;
+
+//two loafs of bread
+var bread = 1;
+
+
