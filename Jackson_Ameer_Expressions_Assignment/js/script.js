@@ -2,91 +2,40 @@
 
 //Expressions - PEMDAS - The Order of Operations
 
-alert("Welcome Bachelor, how may I help you today?")
+alert("Give me an A, I did my best!")
 
 //Bachelor grocery list
-var vitamindmilk;
-var eggs;
-var mayonnaise;
-var kraftsinglescheese;
-var sandwichmeat;
-var aquafinabottlewater;
-var cereal;
-var bread;
-var topramennoodles; 
-var juice;
 
-//prompt
-vitamindmilk = prompt("How many cartons of milk would you like to purchase ($5.00ea.):");
+var vitaminDmilk = 3;
+var eggs  = 6;
+var bestfoodsmayonnaise = 4;
+var kraftsinglescheese = 3;
+var sandwhichmeat = 6;
+var aquafinabottlewater = 6;
 
-var totalmilk = vitamindmilk * 5;
+//two boxes of cereal
+var cereal = [5, 5 * 2];
 
-//prompt
-eggs = prompt("How many cartons of eggs would you like to purchase ($6.00ea.):");
+//two loafs of bread
+var bread = [1, 1 * 2];
 
-var totaleggs = eggs * 6;
+//top ramon noodles come in a 12 pack or .17 cent each
+var topramennoodles = [.17 * 0, .17 * 1, .17 * 2, .17 * 3, .17 * 4, .17 * 5, .17 * 6, .17 * 7, .17 * 8, .17 * 9, .17 * 10, .17 * 11, .17 * 12];  
 
-//prompt
-mayonnaise = prompt("How many mayonnaise would you like to purchase ($4.00ea.):");
+//lemonade is 2 for $5.00
+var juice = [2.50, 2.50 * 2]; 
 
-var totalmayonnaise = mayonnaise * 4;
 
-//prompt
-kraftsinglescheese = prompt("How many packs of Kfraft Singles cheese would you like to purchase ($3.00ea.):");
+var sum = vitamindmilk + cereal [0] + eggs + bread [1] + bestfoodsmayonnaise + kraftsinglescheese + sandwhichmeat + topramennoodles [12] + aquafinabottlewater + juice [1];
 
-var totalkraftsinglescheese = kraftsinglescheese * 3;
 
-//prompt
-sandwichmeat = prompt("How many packs of sandwich meat would you like to purchase ($6.00ea.):");
+//california sales tax is 7.5% 
+var salestax = 0.075
+var total = sum * salestax + sum;
+console.log(total);
 
-var totalsandwichmeat = sandwichmeat * 6;
-
-//prompt
-aquafinabottlewater = prompt("How many cases of Aquafina bottle water would you like to purchase ($6.00ea.):");
-
-var totalaquafinabottlewater = aquafinabottlewater * 6;
-
-//prompt
-cereal = prompt("How many boxes of cereal would you like to purchase ($5.00ea.):");
-
-var totalcereal = cereal * 5;
-
-//prompt
-bread = prompt("How many loaves of bread would you like to purchase ($1.00ea.):");
-
-var totalbread = bread * 1;
-
-//prompt
-topramennoodles = prompt("How many Top Ramen noodles would you like to purchase ($0.17ea.):");
-
-var totaltopramennoodles = topramennoodles * .17;
-
-//prompt
-juice = prompt("How many juices would you like to purchase ($2.50ea.):");
-
-var totaljuice = juice * 2.50;
-
-alert("Thank you Bachelor, have a nice day!")
-
-//total grocery bill
-var amount = totaleggs + totalmilk + totalmayonnaise + totalkraftsinglescheese + totalsandwichmeat + totalaquafinabottlewater + totalcereal + totalbread + totaltopramennoodles + totaljuice; 
-
-//total sales tax
-var totalsalestax = (amount) * 0.075;
-
-var totalamount = amount + totalsalestax;
-
-console.log("Milk cost $" + (totalmilk));
-console.log("Egg cost $" + (totaleggs));
-console.log("Mayonnaise cost $" + (totalmayonnaise));
-console.log("Kraft single cheese cost $" + (totalkraftsinglescheese));
-console.log("Sandwich meat cost $" + (totalsandwichmeat));
-console.log("Aquafina bottle water  cost $" + (totalaquafinabottlewater));
-console.log("Cerel cost $" + (totalcereal));
-console.log("Bread cost $" + (totalbread));
-console.log("Top Ramen Noodles cost $" + (totaltopramennoodles));
-console.log("Juice cost $" + (totaljuice));
-
-console.log("Amount $" + (amount));
-console.log("Salestax $" + (totalsalestax));
-console.log("Total amount $" + (totalamount));
+//If your purchace everything your total will be $50.193
+//If you purchase everything, with one box of cereal your total will be $45.193
+//If you purchase everything, with one loaf of bread your total will be $49.493
+//If you purchase everything, with one topramennoodle your total will be $48.55775
+//If you purchase everything, with one lemonade your total will be $47.8805
